@@ -8,10 +8,14 @@
 
 #import "TGTabBarViewController.h"
 #import "TGHomeTableViewController.h"
+#import "TGSecondTableViewController.h"
+#import "TGThirdTableViewController.h"
 #import "TGNavigationController.h"
 
 @interface TGTabBarViewController ()
 @property (nonatomic, weak) TGHomeTableViewController *home;
+@property (nonatomic, weak) TGSecondTableViewController *second;
+@property (nonatomic, weak) TGThirdTableViewController *third;
 @end
 
 @implementation TGTabBarViewController
@@ -27,13 +31,16 @@
 
 -(void)setupAllChildViewControllers{
     TGHomeTableViewController *home = [[TGHomeTableViewController alloc] init];
-    [self addOneChildVc:home title:@"首页" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_highlighted"];
+    [self addOneChildVc:home title:@"首页" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
     self.home = home;
     
-//    TGMessageViewController *message = [[TGMessageViewController alloc] init];
-//    [self addOneChildVc:message title:@"消息" imageName:@"tabbar_message_center" selectedImageName:@"tabbar_message_center_selected"];
-//    self.message = message;
+    TGSecondTableViewController *second = [[TGSecondTableViewController alloc] init];
+    [self addOneChildVc:second title:@"收益购" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+    self.second = second;
     
+    TGThirdTableViewController *third = [[TGThirdTableViewController alloc] init];
+    [self addOneChildVc:third title:@"我" imageName:@"tabbar_home" selectedImageName:@"tabbar_home_selected"];
+    self.third = third;
 //    self.tabBar.tintColor = [UIColor blueColor];
 //    self.tabBar.selectionIndicatorImage = [UIImage imageWithName:@"navigationbar_button_background"];
 //    // 调整tabbar
@@ -43,9 +50,9 @@
 //        customTabBar.selectionIndicatorImage = [UIImage imageWithName:@"navigationbar_button_background"];
 //    }
 //    
-//    customTabBar.TGTabDelegate = (id)self;
+//    customTabBar.tabBarDelegate = (id)self;
 //    
-//    // 更换系统自带的tabbar
+//    //更换系统自带的tabbar
 //    [self setValue:customTabBar forKeyPath:@"tabBar"];
     
     // 设置代理（监听控制器的切换， 控制器一旦切换了子控制器，就会调用代理的tabBarController:didSelectViewController:）
@@ -74,7 +81,7 @@
  */
 - (void)addOneChildVc:(UIViewController *)childVc title:(NSString *)title imageName:(NSString *)imageName selectedImageName:(NSString *)selectedImageName
 {
-    //childVc.view.backgroundColor = TGRandomColor;
+//    childVc.view.backgroundColor = TGRandomColor;
     // 设置标题
     childVc.title = title;
     // 设置图标

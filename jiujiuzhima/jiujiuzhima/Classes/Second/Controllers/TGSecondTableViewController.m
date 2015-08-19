@@ -1,55 +1,27 @@
 //
-//  TGHomeTableViewController.m
-//  收益购
+//  TGSencondTableViewController.m
+//  jiujiuzhima
 //
 //  Created by 汉森 on 15/8/18.
 //  Copyright (c) 2015年 hansen. All rights reserved.
 //
 
-#import "TGHomeTableViewController.h"
+#import "TGSecondTableViewController.h"
 
-@interface TGHomeTableViewController ()
+@interface TGSecondTableViewController ()
 
 @end
 
-@implementation TGHomeTableViewController
+@implementation TGSecondTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //设置tableView的背景颜色、取出分割线以及垂直滚动条
-//    self.tableView.backgroundColor = TGColor(211, 211, 211);
-//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-//    self.tableView.showsVerticalScrollIndicator = NO;
-    //设置导航栏
-    [self setupNav];
-}
-
-/**
- *  设置导航栏
- */
--(void)setupNav{
-    //设置导航栏图标
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_friendsearch" highlightedImageName:@"navigationbar_friendsearch_highlighted" target:self action:@selector(back)];
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_pop" highlightedImageName:@"navigationbar_pop_highlighted" target:self action:@selector(back)];
     
-    //设置标题按钮
-//    TGTitleButton *btn = [[TGTitleButton alloc] init];
-//    btn.width = 100;
-//    btn.height = 35;
-//    [btn setImage:[UIImage imageWithName:@"navigationbar_arrow_down"] forState:UIControlStateNormal];
-//    [btn setBackgroundImage:[UIImage resizedImage:@"navigationbar_filter_background_highlighted"] forState:UIControlStateHighlighted];
-//    NSString *name = [TGAccountTool account].name;
-//    [btn setTitle:name ? name : @"首页" forState:UIControlStateNormal];
-//    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-//    //高亮时不需要调整图片为灰色
-//    btn.adjustsImageWhenHighlighted = NO;
-//    [btn addTarget:self action:@selector(titleClicked:) forControlEvents:UIControlEventTouchUpInside];
-//    self.navigationItem.titleView = btn;
-//    self.titleButton = btn;
-}
-
--(void)back{
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
     
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -60,31 +32,26 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 10;
+    return 0;
 }
 
-
+/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-//    static NSString *identifier = @"ID";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
     
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
-    static NSString *ID = @"ID";
-    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:ID];
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID forIndexPath:indexPath];
-    if (!cell) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
-    }
     // Configure the cell...
     
     return cell;
 }
-
+*/
 
 /*
 // Override to support conditional editing of the table view.

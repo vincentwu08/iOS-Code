@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6038ECCE1B840DA800058E01 /* TGHomeHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6038ECCD1B840DA800058E01 /* TGHomeHeaderView.m */; };
+		6038ECD11B84131100058E01 /* TGHomeScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6038ECD01B84131100058E01 /* TGHomeScrollView.m */; };
+		6038ECD41B84133000058E01 /* TGHomeButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6038ECD31B84133000058E01 /* TGHomeButtonView.m */; };
 		60ABF2B91B82FD39007C7BE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ABF2B81B82FD39007C7BE8 /* main.m */; };
 		60ABF2BF1B82FD39007C7BE8 /* jiujiuzhima.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 60ABF2BD1B82FD39007C7BE8 /* jiujiuzhima.xcdatamodeld */; };
 		60ABF2C71B82FD39007C7BE8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 60ABF2C61B82FD39007C7BE8 /* Images.xcassets */; };
@@ -19,6 +22,9 @@
 		60ABF3091B82FDC5007C7BE8 /* TGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ABF2F11B82FDC5007C7BE8 /* TGNavigationController.m */; };
 		60ABF30A1B82FDC5007C7BE8 /* TGTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ABF2F31B82FDC5007C7BE8 /* TGTabBarViewController.m */; };
 		60ABF30B1B82FDC5007C7BE8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 60ABF2F71B82FDC5007C7BE8 /* AppDelegate.m */; };
+		60F1F9BE1B8342A600FF45C0 /* TGThirdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1F9BD1B8342A600FF45C0 /* TGThirdTableViewController.m */; };
+		60F1F9C61B83435A00FF45C0 /* TGSecondTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1F9C21B83435A00FF45C0 /* TGSecondTableViewController.m */; };
+		60F1F9C91B8353B700FF45C0 /* TGTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 60F1F9C81B8353B700FF45C0 /* TGTabBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6038ECCC1B840DA800058E01 /* TGHomeHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGHomeHeaderView.h; sourceTree = "<group>"; };
+		6038ECCD1B840DA800058E01 /* TGHomeHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGHomeHeaderView.m; sourceTree = "<group>"; };
+		6038ECCF1B84131100058E01 /* TGHomeScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGHomeScrollView.h; sourceTree = "<group>"; };
+		6038ECD01B84131100058E01 /* TGHomeScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGHomeScrollView.m; sourceTree = "<group>"; };
+		6038ECD21B84133000058E01 /* TGHomeButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGHomeButtonView.h; sourceTree = "<group>"; };
+		6038ECD31B84133000058E01 /* TGHomeButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGHomeButtonView.m; sourceTree = "<group>"; };
 		60ABF2B31B82FD39007C7BE8 /* jiujiuzhima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = jiujiuzhima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		60ABF2B71B82FD39007C7BE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		60ABF2B81B82FD39007C7BE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,6 +68,12 @@
 		60ABF2F61B82FDC5007C7BE8 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		60ABF2F71B82FDC5007C7BE8 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		60ABF2F81B82FDC5007C7BE8 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		60F1F9BC1B8342A600FF45C0 /* TGThirdTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGThirdTableViewController.h; sourceTree = "<group>"; };
+		60F1F9BD1B8342A600FF45C0 /* TGThirdTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGThirdTableViewController.m; sourceTree = "<group>"; };
+		60F1F9C11B83435A00FF45C0 /* TGSecondTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSecondTableViewController.h; sourceTree = "<group>"; };
+		60F1F9C21B83435A00FF45C0 /* TGSecondTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGSecondTableViewController.m; sourceTree = "<group>"; };
+		60F1F9C71B8353B700FF45C0 /* TGTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGTabBar.h; sourceTree = "<group>"; };
+		60F1F9C81B8353B700FF45C0 /* TGTabBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGTabBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +155,7 @@
 			children = (
 				60ABF2E01B82FDC5007C7BE8 /* Home */,
 				60ABF2E71B82FDC5007C7BE8 /* Main */,
-				60ABF2FB1B82FDC5007C7BE8 /* Sencond */,
+				60F1F9BF1B83435A00FF45C0 /* Second */,
 				60ABF3001B82FDC5007C7BE8 /* Third */,
 			);
 			path = Classes;
@@ -180,6 +198,12 @@
 		60ABF2E61B82FDC5007C7BE8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6038ECCC1B840DA800058E01 /* TGHomeHeaderView.h */,
+				6038ECCD1B840DA800058E01 /* TGHomeHeaderView.m */,
+				6038ECCF1B84131100058E01 /* TGHomeScrollView.h */,
+				6038ECD01B84131100058E01 /* TGHomeScrollView.m */,
+				6038ECD21B84133000058E01 /* TGHomeButtonView.h */,
+				6038ECD31B84133000058E01 /* TGHomeButtonView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,45 +272,8 @@
 		60ABF2FA1B82FDC5007C7BE8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		60ABF2FB1B82FDC5007C7BE8 /* Sencond */ = {
-			isa = PBXGroup;
-			children = (
-				60ABF2FC1B82FDC5007C7BE8 /* Controllers */,
-				60ABF2FD1B82FDC5007C7BE8 /* Models */,
-				60ABF2FE1B82FDC5007C7BE8 /* Tools */,
-				60ABF2FF1B82FDC5007C7BE8 /* Views */,
-			);
-			path = Sencond;
-			sourceTree = "<group>";
-		};
-		60ABF2FC1B82FDC5007C7BE8 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		60ABF2FD1B82FDC5007C7BE8 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		60ABF2FE1B82FDC5007C7BE8 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tools;
-			sourceTree = "<group>";
-		};
-		60ABF2FF1B82FDC5007C7BE8 /* Views */ = {
-			isa = PBXGroup;
-			children = (
+				60F1F9C71B8353B700FF45C0 /* TGTabBar.h */,
+				60F1F9C81B8353B700FF45C0 /* TGTabBar.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -305,6 +292,8 @@
 		60ABF3011B82FDC5007C7BE8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				60F1F9BC1B8342A600FF45C0 /* TGThirdTableViewController.h */,
+				60F1F9BD1B8342A600FF45C0 /* TGThirdTableViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -324,6 +313,47 @@
 			sourceTree = "<group>";
 		};
 		60ABF3041B82FDC5007C7BE8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		60F1F9BF1B83435A00FF45C0 /* Second */ = {
+			isa = PBXGroup;
+			children = (
+				60F1F9C01B83435A00FF45C0 /* Controllers */,
+				60F1F9C31B83435A00FF45C0 /* Models */,
+				60F1F9C41B83435A00FF45C0 /* Tools */,
+				60F1F9C51B83435A00FF45C0 /* Views */,
+			);
+			path = Second;
+			sourceTree = "<group>";
+		};
+		60F1F9C01B83435A00FF45C0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				60F1F9C11B83435A00FF45C0 /* TGSecondTableViewController.h */,
+				60F1F9C21B83435A00FF45C0 /* TGSecondTableViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		60F1F9C31B83435A00FF45C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60F1F9C41B83435A00FF45C0 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		60F1F9C51B83435A00FF45C0 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -429,14 +459,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60F1F9C91B8353B700FF45C0 /* TGTabBar.m in Sources */,
 				60ABF3081B82FDC5007C7BE8 /* UIView+Extension.m in Sources */,
+				6038ECD41B84133000058E01 /* TGHomeButtonView.m in Sources */,
 				60ABF30A1B82FDC5007C7BE8 /* TGTabBarViewController.m in Sources */,
 				60ABF30B1B82FDC5007C7BE8 /* AppDelegate.m in Sources */,
 				60ABF3071B82FDC5007C7BE8 /* UIImage+Extension.m in Sources */,
+				6038ECD11B84131100058E01 /* TGHomeScrollView.m in Sources */,
 				60ABF3061B82FDC5007C7BE8 /* UIBarButtonItem+Extension.m in Sources */,
 				60ABF2BF1B82FD39007C7BE8 /* jiujiuzhima.xcdatamodeld in Sources */,
 				60ABF2B91B82FD39007C7BE8 /* main.m in Sources */,
+				60F1F9BE1B8342A600FF45C0 /* TGThirdTableViewController.m in Sources */,
+				60F1F9C61B83435A00FF45C0 /* TGSecondTableViewController.m in Sources */,
 				60ABF3051B82FDC5007C7BE8 /* TGHomeTableViewController.m in Sources */,
+				6038ECCE1B840DA800058E01 /* TGHomeHeaderView.m in Sources */,
 				60ABF3091B82FDC5007C7BE8 /* TGNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -496,7 +532,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREFIX_HEADER = "/Users/hansen/Documents/iOS Code/jiujiuzhima/Classes/Main/Others/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/hansen/Documents/iOS Code/jiujiuzhima/jiujiuzhima/Classes/Main/Others/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -508,7 +544,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -539,14 +575,14 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "/Users/hansen/Documents/iOS Code/jiujiuzhima/Classes/Main/Others/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/hansen/Documents/iOS Code/jiujiuzhima/jiujiuzhima/Classes/Main/Others/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -558,6 +594,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = jiujiuzhima/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -568,6 +605,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = jiujiuzhima/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

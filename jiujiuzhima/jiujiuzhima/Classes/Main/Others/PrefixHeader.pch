@@ -16,6 +16,12 @@
 #import "UIImage+Extension.h"
 #import "UIView+Extension.h"
 
+#ifdef DEBUG // 调试状态, 打开LOG功能
+#define TGLog(...) NSLog(__VA_ARGS__)
+#else // 发布状态, 关闭LOG功能
+#define TGLog(...)
+#endif
+
 // 颜色
 #define TGColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
@@ -30,5 +36,11 @@
 
 // 屏幕尺寸
 #define TGScreenW [UIScreen mainScreen].bounds.size.width
+
+#define TGHomeScrollViewHeight 136
+
+#define TGHomeButtonDidClicked @"TGHomeButtonDidClicked"
+
+#define TGSelectedButton @"TGSelectedButton"
 
 #endif

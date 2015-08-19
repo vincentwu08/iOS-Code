@@ -7,9 +7,10 @@
 //
 
 #import "TGHomeTableViewController.h"
+#import "TGHomeHeaderView.h"
 
 @interface TGHomeTableViewController ()
-
+@property (nonatomic, weak) TGHomeHeaderView *homeHeader;
 @end
 
 @implementation TGHomeTableViewController
@@ -19,9 +20,36 @@
     //设置tableView的背景颜色、取出分割线以及垂直滚动条
 //    self.tableView.backgroundColor = TGColor(211, 211, 211);
 //    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-//    self.tableView.showsVerticalScrollIndicator = NO;
+    self.tableView.showsVerticalScrollIndicator = NO;
     //设置导航栏
     [self setupNav];
+    //设置tableView的headerView
+    [self setupTableHeaderView];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(homeButtonDidClicked:) name:TGHomeButtonDidClicked object:nil];
+}
+
+-(void)homeButtonDidClicked:(NSNotification *)note{
+    UIButton *clickedButton = note.userInfo[TGSelectedButton];
+    TGLog(@"%@", clickedButton.titleLabel.text);
+}
+
+- (void)dealloc{
+    
+}
+
+/**
+ *  设置tableView的headerView
+ */
+-(void)setupTableHeaderView{
+    CGFloat headerX = 0;
+    CGFloat headerY = 0;
+    CGFloat headerW = TGScreenW;
+    CGFloat headerH = 196;
+    CGRect rect = CGRectMake(headerX, headerY, headerW, headerH);
+    TGHomeHeaderView *homeHeaderView = [[TGHomeHeaderView alloc] initWithFrame:rect];
+//    homeHeaderView.backgroundColor = TGRandomColor;
+    self.homeHeader = homeHeaderView;
+    self.tableView.tableHeaderView = self.homeHeader;
 }
 
 /**
@@ -29,8 +57,8 @@
  */
 -(void)setupNav{
     //设置导航栏图标
-    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_friendsearch" highlightedImageName:@"navigationbar_friendsearch_highlighted" target:self action:@selector(back)];
-    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_pop" highlightedImageName:@"navigationbar_pop_highlighted" target:self action:@selector(back)];
+//    self.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_friendsearch" highlightedImageName:@"navigationbar_friendsearch_highlighted" target:self action:@selector(back)];
+//    self.navigationItem.rightBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_pop" highlightedImageName:@"navigationbar_pop_highlighted" target:self action:@selector(back)];
     
     //设置标题按钮
 //    TGTitleButton *btn = [[TGTitleButton alloc] init];
@@ -79,7 +107,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
     }
     // Configure the cell...
-    
+    cell.textLabel.text = @"test";
     return cell;
 }
 
